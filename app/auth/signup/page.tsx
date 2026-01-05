@@ -57,7 +57,7 @@ const SignUp = () => {
 
       if (profileError) throw profileError;
 
-      router.push('/');
+      router.push('/auth/login');
     } catch (err: any) {
       setError(err.message);
     } finally {
